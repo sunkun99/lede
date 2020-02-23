@@ -9,7 +9,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: N1盒子opernWrt默认插件编译
+name: opernWrt默认插件编译
 
 on:
   push:
