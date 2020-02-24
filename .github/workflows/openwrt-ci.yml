@@ -265,7 +265,8 @@ jobs:
           # CONFIG_TARGET_EXT4_BLOCKSIZE_1K is not set
           CONFIG_TARGET_EXT4_BLOCKSIZE=4096
           # CONFIG_TARGET_EXT4_JOURNAL is not set
-          # CONFIG_TARGET_ROOTFS_SQUASHFS is not set
+          CONFIG_TARGET_ROOTFS_SQUASHFS=y
+          CONFIG_TARGET_SQUASHFS_BLOCK_SIZE=256
           CONFIG_TARGET_UBIFS_FREE_SPACE_FIXUP=y
           CONFIG_TARGET_UBIFS_JOURNAL_SIZE=""
           # CONFIG_TARGET_IMAGES_GZIP is not set
@@ -274,7 +275,7 @@ jobs:
           # Image Options
           #
           CONFIG_TARGET_KERNEL_PARTSIZE=64
-          CONFIG_TARGET_ROOTFS_PARTSIZE=256
+          CONFIG_TARGET_ROOTFS_PARTSIZE=160
           
           #
           # Global build settings
@@ -3957,15 +3958,15 @@ jobs:
           # CONFIG_PACKAGE_luci-app-transmission is not set
           # CONFIG_PACKAGE_luci-app-travelmate is not set
           # CONFIG_PACKAGE_luci-app-ttyd is not set
-          CONFIG_PACKAGE_luci-app-udpxy=y
-          CONFIG_PACKAGE_luci-app-uhttpd=y
+          # CONFIG_PACKAGE_luci-app-udpxy is not set
+          # CONFIG_PACKAGE_luci-app-uhttpd is not set
           # CONFIG_PACKAGE_luci-app-unblockmusic is not set
           # CONFIG_PACKAGE_luci-app-unblockneteasemusic-go is not set
           CONFIG_PACKAGE_luci-app-unblockneteasemusic-mini=y
           # CONFIG_PACKAGE_luci-app-unbound is not set
           CONFIG_PACKAGE_luci-app-upnp=y
           # CONFIG_PACKAGE_luci-app-usb-printer is not set
-          CONFIG_PACKAGE_luci-app-v2ray-server=y
+          # CONFIG_PACKAGE_luci-app-v2ray-server is not set
           # CONFIG_PACKAGE_luci-app-verysync is not set
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           # CONFIG_PACKAGE_luci-app-vnstat is not set
@@ -4163,9 +4164,6 @@ jobs:
           # CONFIG_PACKAGE_luci-i18n-statistics-vi is not set
           CONFIG_PACKAGE_luci-i18n-statistics-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-statistics-zh-tw is not set
-          # CONFIG_PACKAGE_luci-i18n-uhttpd-ja is not set
-          # CONFIG_PACKAGE_luci-i18n-uhttpd-pt-br is not set
-          # CONFIG_PACKAGE_luci-i18n-uhttpd-ru is not set
           # CONFIG_PACKAGE_luci-i18n-upnp-ca is not set
           # CONFIG_PACKAGE_luci-i18n-upnp-cs is not set
           # CONFIG_PACKAGE_luci-i18n-upnp-de is not set
@@ -4191,7 +4189,6 @@ jobs:
           # CONFIG_PACKAGE_luci-i18n-upnp-vi is not set
           CONFIG_PACKAGE_luci-i18n-upnp-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-upnp-zh-tw is not set
-          CONFIG_PACKAGE_luci-i18n-v2ray-server-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vlmcsd-zh-cn=y
           CONFIG_PACKAGE_luci-i18n-vsftpd-zh-cn=y
           # CONFIG_PACKAGE_luci-i18n-wol-ca is not set
@@ -5211,7 +5208,7 @@ jobs:
           CONFIG_PACKAGE_trojan=y
           # CONFIG_PACKAGE_u2pnpd is not set
           CONFIG_PACKAGE_uclient-fetch=y
-          CONFIG_PACKAGE_udpxy=y
+          # CONFIG_PACKAGE_udpxy is not set
           # CONFIG_PACKAGE_ulogd is not set
           # CONFIG_PACKAGE_umbim is not set
           # CONFIG_PACKAGE_umdns is not set
